@@ -64,7 +64,7 @@ class Ingredient(models.Model):
 
 
 class Recipe(models.Model):
-    """Ingredient to be used in a recipe"""
+    """Recipe object"""
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE
